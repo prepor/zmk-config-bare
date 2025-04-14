@@ -42,6 +42,13 @@
             RH2;
             hold-trigger-on-release;
         };
+
+        shift_morph: shift_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }; 
     };
 
     keymap {
