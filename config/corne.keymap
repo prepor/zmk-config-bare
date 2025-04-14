@@ -22,7 +22,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <0>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 30 31 32>;
             hold-trigger-on-release;
         };
 
@@ -37,6 +37,15 @@
 
             hold-trigger-key-positions = <4 3 2 1 0 10 14 13 11 20 21 22 12 23 24 30 31 32 33 34 35>;
             hold-trigger-on-release;
+        };
+
+        mphcomma: mphcomma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MPHCOMMA";
+            bindings = <&kp DOT>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -53,7 +62,7 @@
             bindings = <
   &kp Q        &kp W        &kp E          &kp R         &kp T        &kp Y    &kp U         &kp I          &kp O        &kp P
   &hml A LGUI  &hml S LALT  &hml D LSHIFT  &hml F LCTRL  &kp G        &kp H    &hmr J RCTRL  &hmr K RSHIFT  &hmr L RALT  &hmr SEMI RGUI
-  &kp Z        &kp X        &kp C          &kp V         &kp B        &kp N    &kp M         &kp COMMA      &kp DOT      &kp FSLH
+  &kp Z        &kp X        &kp C          &kp V         &kp B        &kp N    &kp M         &mphcomma      &kp DOT      &kp FSLH
                             &kp LGUI       &trans        &kp SPACE    &kp RET  &trans        &kp RALT
             >;
         };
