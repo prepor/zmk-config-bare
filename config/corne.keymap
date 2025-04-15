@@ -5,10 +5,12 @@
  */
 
 #include <behaviors/num_word.dtsi> // Requires auto-layer module.
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20  // 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20  // 10
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -453,7 +455,7 @@
         compatible = "zmk,conditional-layers";
 
         sys {
-            if-layers = <2 1>;
+            if-layers = <2 3>;
             then-layer = <4>;
         };
     };
