@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -412,10 +413,10 @@
 
         nav {
             bindings = <
-  &trans    &trans    &kp LS(TAB)  &trans     &trans    &kp PG_UP  &kp BSPC      &kp UP    &kp DEL    &trans
-  &sk LGUI  &sk LALT  &sk LSHIFT   &sk LCTRL  &trans    &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT  &kp RET
-  &trans    &trans    &trans       &trans     &trans    &kp INS    &kp TAB       &trans    &trans     &trans
-                      &trans       &trans     &trans    &trans     &kp K_CANCEL  &trans
+  &trans    &trans    &kp LS(TAB)  &trans     &msc SCRL_UP      &kp PG_UP  &kp BSPC      &kp UP    &kp DEL    &trans
+  &sk LGUI  &sk LALT  &sk LSHIFT   &sk LCTRL  &msc SCRL_DOWN    &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT  &kp RET
+  &trans    &trans    &trans       &trans     &trans            &kp INS    &kp TAB       &trans    &trans     &trans
+                      &trans       &trans     &trans            &trans     &kp K_CANCEL  &trans
             >;
         };
 
