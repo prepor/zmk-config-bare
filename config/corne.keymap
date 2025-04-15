@@ -17,9 +17,7 @@
     quick-release;
 };
 
-&sl {
-    ignore-modifiers;
-};
+&sl { ignore-modifiers; };
 
 &lt {
     flavor = "balanced";
@@ -184,10 +182,10 @@
 
         nav {
             bindings = <
-  &trans    &trans    &trans      &trans     &trans    &kp PG_UP  &kp BSPC  &kp UP    &kp DEL    &trans
-  &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &trans    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET
-  &trans    &trans    &trans      &trans     &trans    &trans     &trans    &trans    &trans     &trans
-                      &trans      &trans     &trans    &trans     &trans    &trans
+  &trans    &trans    &kp LS(TAB)  &trans     &trans    &kp PG_UP  &kp BSPC      &kp UP    &kp DEL    &trans
+  &sk LGUI  &sk LALT  &sk LSHIFT   &sk LCTRL  &trans    &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT  &kp RET
+  &trans    &trans    &trans       &trans     &trans    &kp INS    &kp TAB       &trans    &trans     &trans
+                      &trans       &trans     &trans    &trans     &kp K_CANCEL  &trans
             >;
         };
 
