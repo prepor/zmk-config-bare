@@ -218,7 +218,7 @@
 
         rpar {
             bindings = <&hmr_rpar RS(RALT) 0>;
-            key-positions = <17 30>;
+            key-positions = <17 18>;
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
             layers = <0 1 3>;
@@ -260,6 +260,38 @@
             key-positions = <27 28>;
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
+            layers = <0 3 1>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <5 15>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <6 16>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        star {
+            bindings = <&kp STAR>;
+            key-positions = <7 17>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        amps {
+            bindings = <&kp AMPS>;
+            key-positions = <8 18>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
             layers = <0 3 1>;
         };
     };
