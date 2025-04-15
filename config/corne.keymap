@@ -225,14 +225,14 @@
             key-positions = <17 18>;
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
-            layers = <0 1 3>;
+            layers = <0 3>;
         };
 
         lpar {
             bindings = <&hmr_lpar RS(RCTRL) 0>;
             key-positions = <16 17>;
             timeout-ms = <30150>;
-            layers = <0 1 3>;
+            layers = <0 3>;
         };
 
         bspc {
