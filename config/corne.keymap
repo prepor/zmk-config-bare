@@ -12,6 +12,22 @@
     chosen { zmk,matrix_transform = &five_column_transform; };
 };
 
+&sk {
+  release-after-ms = <900>;
+  quick-release;
+};
+
+&sl { // Allow sticky mods to chord across sticky layers.
+  ignore-modifiers;
+};
+
+&lt {
+  flavor = "balanced";
+  tapping-term-ms = <200>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+
 / {
     behaviors {
         hml: home_row_mod_left {
