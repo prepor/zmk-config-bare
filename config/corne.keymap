@@ -13,20 +13,19 @@
 };
 
 &sk {
-  release-after-ms = <900>;
-  quick-release;
+    release-after-ms = <900>;
+    quick-release;
 };
 
-&sl { // Allow sticky mods to chord across sticky layers.
-  ignore-modifiers;
+&sl {
+    ignore-modifiers;
 };
 
 &lt {
-  flavor = "balanced";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <QUICK_TAP_MS>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
 };
-
 
 / {
     behaviors {
@@ -185,10 +184,10 @@
 
         nav {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+  &trans    &trans    &trans      &trans     &trans    &kp PG_UP  &kp BSPC  &kp UP    &kp DEL    &trans
+  &sk LGUI  &sk LALT  &sk LSHIFT  &sk LCTRL  &trans    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET
+  &trans    &trans    &trans      &trans     &trans    &trans     &trans    &trans    &trans     &trans
+                      &trans      &trans     &trans    &trans     &trans    &trans
             >;
         };
 
