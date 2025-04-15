@@ -119,7 +119,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_DANCE";
             #binding-cells = <0>;
-            bindings = <&none>, <&sl 3>;
+            bindings = <&num_word 3>, <&sl 3>;
 
             tapping-term-ms = <200>;
         };
