@@ -294,6 +294,102 @@
             require-prior-idle-ms = <50>;
             layers = <0 3 1>;
         };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <15 25>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <26 16>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        fslh {
+            bindings = <&kp FSLH>;
+            key-positions = <17 27>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <28 18>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <11 1>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <12 2>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        dllr {
+            bindings = <&kp DLLR>;
+            key-positions = <3 13>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        prcnt {
+            bindings = <&kp PRCNT>;
+            key-positions = <4 14>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 11>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        bslh {
+            bindings = <&kp BSLH>;
+            key-positions = <22 12>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <13 23>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <24 14>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <50>;
+            layers = <0 3 1>;
+        };
     };
 
     keymap {
