@@ -367,10 +367,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q        &kp W        &kp F         &kp P         &kp B        &kp J           &kp L                  &kp U          &kp Y             &kp SEMICOLON
-  &hml LGUI A  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G        &kp M           &hmr RCTRL N           &hmr RSHIFT E  &hmr RIGHT_ALT I  &hmr RGUI 0
-  &kp Z        &kp X        &kp C         &kp D         &kp V        &kp K           &kp H                  &kp COMMA      &kp DOT           &kp FSLH
-                            &trans        &lt 1 SPACE   &lt 2 RET    &num_smart 3 0  &shift_magic LSHIFT 0  &trans
+  &kp Q        &kp W        &kp F         &kp P         &kp B        &kp J           &kp L           &kp U          &kp Y             &kp SEMICOLON
+  &hml LGUI A  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G        &kp M           &hmr RCTRL N    &hmr RSHIFT E  &hmr RIGHT_ALT I  &hmr RGUI 0
+  &kp Z        &kp X        &kp C         &kp D         &kp V        &kp K           &kp H           &kp COMMA      &kp DOT           &kp FSLH
+                            &trans        &lt 1 SPACE   &lt 2 ESC    &num_smart 3 0  &mt LSHIFT RET  &trans
             >;
         };
 
