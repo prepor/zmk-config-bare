@@ -190,7 +190,8 @@
         lpar {
             bindings = <&hmr_lpar RS(RCTRL) 0>;
             key-positions = <16 17>;
-            timeout-ms = <30150>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <150>;
             layers = <0 3>;
         };
 
