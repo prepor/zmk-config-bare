@@ -4,6 +4,7 @@ default:
 config := absolute_path('config')
 build := absolute_path('.build')
 out := absolute_path('firmware')
+draw := absolute_path('draw')
 
 # parse combos.dtsi and adjust settings to not run out of slots
 _parse_combos:
@@ -78,6 +79,14 @@ clean-all: clean
 # clear nix cache
 clean-nix:
     nix-collect-garbage --delete-old
+
+# parse & plot keymap
+draw:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    keymap -c "{{ draw }}/config.yaml" parse -z "{{ config }}/corne.keymap" --virtual-layers Combos > "{{ draw }}/corne.yaml"
+    yq -Yi '.combos.[].l = ["Combos"]' "{{ draw }}/corne.yaml"
+    keymap -c "{{ draw }}/config.yaml" draw "{{ draw }}/corne.yaml" >"{{ draw }}/corne.svg"
 
 # initialize west
 init:
