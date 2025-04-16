@@ -3,39 +3,39 @@ layers:
   base:
     - Q
     - W
-    - E
-    - R
-    - T
-    - Y
-    - U
-    - I
-    - O
+    - F
     - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - ;
     - {t: A, h: LGUI}
-    - {t: S, h: LALT}
-    - {t: D, h: LSHFT}
-    - {t: F, h: LCTRL}
+    - {t: R, h: LALT}
+    - {t: S, h: LSHFT}
+    - {t: T, h: LCTRL}
     - G
-    - H
-    - {t: J, h: RCTRL}
-    - {t: K, h: RSHIFT}
-    - {t: L, h: RIGHT ALT}
-    - {t: '"', h: RGUI, s: ''''}
+    - M
+    - {t: N, h: RCTRL}
+    - {t: E, h: RSHIFT}
+    - {t: I, h: RIGHT ALT}
+    - {t: '0', h: RGUI}
     - Z
     - X
     - C
+    - D
     - V
-    - B
-    - N
-    - M
-    - {t: ., s: ','}
-    - {t: ':', s: ;}
+    - K
+    - H
+    - ','
+    - .
     - /
     - {type: trans}
     - {t: SPACE, h: nav}
-    - {t: RET, h: fn}
+    - {t: ESC, h: fn}
     - {t: '&num_dance', h: num}
-    - {t: '&caps_word', h: LSHIFT}
+    - {t: RET, h: LSHIFT}
     - {type: trans}
   nav:
     - {type: trans}
