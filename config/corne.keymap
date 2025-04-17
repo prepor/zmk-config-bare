@@ -426,10 +426,10 @@
 
         fn {
             bindings = <
-  &kp F12        &kp F7        &kp F8          &kp F9         &kp C_VOL_UP    &kp LG(PG_UP)  &kp C_PREV           &kp LG(UP)            &kp C_NEXT                &trans
-  &hml LGUI F11  &hml LALT F4  &hml LSHIFT F5  &hml LCTRL F6  &kp C_VOL_DN    &kp LG(PG_DN)  &hmr RCTRL LG(LEFT)  &hmr RSHIFT LG(DOWN)  &hmr RIGHT_ALT LG(RIGHT)  &trans
-  &kp F10        &kp F2        &kp F2          &kp F3         &trans          &trans         &trans               &trans                &trans                    &trans
-                               &trans          &trans         &trans          &kp C_MUTE     &kp C_PP             &trans
+  &kp F12        &kp F7        &kp F8          &kp F9         &kp C_VOL_UP    &kp LG(PG_UP)         &kp C_PREV           &kp LG(UP)            &kp C_NEXT                &trans
+  &hml LGUI F11  &hml LALT F4  &hml LSHIFT F5  &hml LCTRL F6  &kp C_VOL_DN    &hmr RCTRL LG(PG_DN)  &hmr RCTRL LG(LEFT)  &hmr RSHIFT LG(DOWN)  &hmr RIGHT_ALT LG(RIGHT)  &trans
+  &kp F10        &kp F1        &kp F2          &kp F3         &trans          &trans                &trans               &trans                &trans                    &trans
+                               &trans          &trans         &trans          &kp C_MUTE            &kp C_PP             &trans
             >;
         };
 
